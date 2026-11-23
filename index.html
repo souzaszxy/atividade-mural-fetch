@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Mural de Publicações</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="topo">
+        <div class="container">
+            <p class="etiqueta">ATIVIDADE - API E FETCH</p>
+            <h1>Meu Mural de Publicações</h1>
+            <p class="subtitulo">
+                Consulte publicações de exemplo, pesquise por título
+                e veja como os dados chegam de uma API.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="controles">
+            <div class="linha-controles">
+
+                <label class="campo-busca" for="filtro">
+                    Filtrar pelo título
+                    <input
+                        id="filtro"
+                        type="search"
+                        placeholder="Digite uma palavra..."
+                    >
+                </label>
+
+                <button id="btn-carregar" type="button">
+                    Carregar publicações
+                </button>
+
+            </div>
+
+            <p id="mensagem" role="status"></p>
+            <p id="contador">Nenhuma publicação carregada.</p>
+        </section>
+
+        <section
+            id="lista-posts"
+            class="grade-posts"
+            aria-label="Publicações">
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Projeto educativo usando HTML, CSS e JavaScript.</p>
+    </footer>
+
+</body>
+</html>
